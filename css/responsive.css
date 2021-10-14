@@ -1,0 +1,90 @@
+/* Mobile && Tablet */
+@media (max-width: 1023px) {
+    .hide-on-mobile-tablet{
+        display: none;
+    }
+}
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet{
+        display: none;
+    }
+    .navbar-center{
+        width: 50%;
+    }
+    .home-nav{
+        display: none;
+    }
+    .extra{
+        display: block;
+    }
+    .home-cut{
+        margin-left: 75px;
+    }
+    .home.shrink .home-cut{
+        margin-left:250px;
+    }
+    .home.shrink .home-nav{
+        display: block;
+    }
+    .home.shrink .extra{
+        display: none;
+    }
+}
+/* Mobile */
+@media (max-width: 739px) {
+    .hide-on-mobile{
+        display: none;
+    }
+    .home-nav{
+        display: none;
+    }
+
+    .home-right{
+        width: 100%;
+        
+    }
+    .navbar-center {
+        display: none;
+    }
+    .home-cut{
+        margin-left: 0 !important;
+    }
+    .extra{
+        display: none;
+    }
+    .home.shrink .extra {
+        display: none;
+    }
+    .cut-all__right{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .search__input-mb{
+        display: none;
+    }
+    .search-mb{
+        display: block;
+        position: relative;
+    }
+    .application{
+        display: none;
+    }
+    .block{
+        display: block;
+    }
+    .input-icon{
+        position: absolute;
+        top: 7px;
+        right: 7px;
+    }
+    .bell-item{
+        right: -83px;
+        width: 100vw;
+    }
+    .bell-icon__item{
+        display: none;
+    }
+}

@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Youtobe</title>
+</head>
+<body>
+    <div class="main">
+        <!-- Header -->
+        <header class="header">
+            <div class="navbar">
+                <div class="navbar-left">
+                    <div class="menu">
+                        <i class='menu-icon bx bx-menu'></i>
+                    </div>
+                    <a href="#" class="logo">
+                        <img src="images/YouTube_Logo_2017.svg.png" alt="" class="logo-menu">
+                    </a>
+                </div>
+                <div class="navbar-center">
+                    <div class="center-input">
+                        <input type="text" placeholder="Tìm kiếm" class="input-1">
+                        <ul class="navbar-fc">
+                            <li class="fc-item">gay tv media</li>
+                            <li class="fc-item">review phim</li>
+                            <li class="fc-item">tony tv</li>
+                            <li class="fc-item">hiha</li>
+                            <li class="fc-item">mixigaming</li>
+                            <li class="fc-item">muse vn</li>
+                            <li class="fc-item">thanh xam tv</li>
+                            <li class="fc-item">review amine hay</li>
+                            <li class="fc-item">tóm tắt anime</li>
+                        </ul>
+                        <i class='input-icon bx bxs-keyboard'></i>
+                    </div>
+                    <button class="search">
+                        <i class='search-icon bx bx-search' ></i>
+                        <p class="hover-text search-hover">Tìm kiếm</p>
+                    </button>
+                    <div class="mic">
+                        <i class='mic-icon bx bxs-microphone'></i>
+                        <p class="hover-text mic-hover">Tìm kiếm bằng giọng nói</p>
+                    </div>
+                </div>
+                
+                <div class="navbar-right">
+                    <div id="add" class="create navbar-right__menu">
+                        <p class="hover-text create-hover">Tạo</p>
+                        <div class="icon">
+                            <i class='icon-pl right-icon bx bx-camera-movie'></i>
+                            <i class='icon-pl right-icon bx bxs-camera-movie'></i>
+                        </div>
+                        <div class="create-click">
+                            <div class="create-up">
+                                <i class='search-icon up-icon bx bx-slideshow'></i>
+                                <p class="create-content">Tải video lên</p>
+                            </div>
+                            <div class="create-up">
+                                <i class='search-icon up-icon bx bx-podcast'></i>
+                                <p class="create-content">Phát trược tiếp</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-mb">
+                    <div class="search-mb-click">
+                        <i class='search-mb-con1 bx bx-search' ></i>
+                    </div>
+                    <div class="center-input search__input-mb">
+                        <input type="text" placeholder="Tìm kiếm" class="input-1 search-input-2">
+                        <ul class="navbar-fc">
+                            <li class="fc-item">gay tv media</li>
+                            <li class="fc-item">review phim</li>
+                            <li class="fc-item">tony tv</li>
+                            <li class="fc-item">hiha</li>
+                            <li class="fc-item">mixigaming</li>
+                            <li class="fc-item">muse vn</li>
+                            <li class="fc-item">thanh xam tv</li>
+                            <li class="fc-item">review amine hay</li>
+                            <li class="fc-item">tóm tắt anime</li>
+                        </ul>
+                        <i class='input-icon bx bxs-keyboard'></i>
+                    </div>
+                </div>
+                    <div id="add" class="application navbar-right__menu">
+                        <p class="hover-text application-hover">Các ứng dụng Youtobe</p>
+                        <div class="icon">
+                            <i class='icon-pl right-icon bx bx-grid-alt'></i>
+                            <i class='icon-pl right-icon bx bxs-grid-alt'></i>
+                        </div>
+                        <ul class="app-item">
+                            <li class="app-item__menu">
+                                <a href="#" class="item__menu-1">
+                                    <img src="images/youtove TV.png" alt="" class="item__menu-img">
+                                    <p class="create-content">Youtobe TV</p>
+                                </a>
+                            </li>
+                            <li class="app-item__menu">
+                                <a href="#" class="item__menu-1">
+                                    <img src="images/youtube_music_logo.png" alt="" class="item__menu-img">
+                                    <p class="create-content">Youtobe Music</p>
+                                </a>
+                                <a href="#" class="item__menu-1">
+                                    <img src="images/kids.png" alt="" class="item__menu-img">
+                                    <p class="create-content">Youtobe Kids</p>
+                                </a>
+                            </li>
+                            <li class="app-item__menu">
+                                <a href="#" class="item__menu-1">
+                                    <img src="images/thuong.png" alt="" class="item__menu-img">
+                                    <p class="create-content">Học viện sáng tạo</p>
+                                </a>
+                                <a href="#" class="item__menu-1">
+                                    <img src="images/thuong.png" alt="" class="item__menu-img">
+                                    <p class="create-content">Youtobe dành cho Nghệ sĩ</p>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div id="add" class="bell navbar-right__menu">
+                        <p class="hover-text bell-hover">Thông báo</p>
+                        <div class="icon">
+                            <i class='icon-pl right-icon bx bx-bell' ></i>
+                            <p class="number">9+</p>
+                            <i class='icon-pl right-icon bx bxs-bell'></i>
+                        </div>
+                        <ul class="bell-item">
+                            <li class="nction">
+                                <h3 class="nction-content">Thông báo</h3>
+                                <i class='nction-icon bx bx-cog'></i>
+                            </li>
+                            <div class="bell-all">
+                            <li class="bell-item-1">
+                                <img src="images/game ol.jpg" alt="" class="bell-img">
+                                <div class="bell-menu">
+                                    <p class="bell-content">100 NGÀY SINH TỒN TRONG ARK #24 - DÀNH CẢ THANH XUÂN ĐỂ BẮT SPIRIT WYVERN VÀ CÁI KẾT =))
+                                    </p>
+                                    <p class="bell-time">7 phút trước</p>
+                                </div>
+                                <img src="images/game ol-1.jpg" alt="" class="bell-img-1">
+                                <i class='bell-icon__item bx bx-dots-vertical-rounded'></i>
+                            </li>
+                            <li class="bell-item-1">
+                                <img src="images/ws tv.jpg" alt="" class="bell-img">
+                                <div class="bell-menu">
+                                    <p class="bell-content">Lẩu Haidilao 2 Ngăn Full Tràn Topping Cay Xé Lưỡi| Unbox Thùng Lẩu Gía 1 Triệu|Cháp Cháp Cùng Woossi
+                                    </p>
+                                    <p class="bell-time">20 phút trước</p>
+                                </div>
+                                <img src="images/ws tv-1.jpg" alt="" class="bell-img-1">
+                                <i class='bell-icon__item bx bx-dots-vertical-rounded'></i>
+                            </li>
+                            <li class="bell-item-1">
+                                <img src="images/misthy.jpg" alt="" class="bell-img">
+                                <div class="bell-menu">
+                                    <p class="bell-content">Phòng stream của Misthy có gì mới?! Unbox các sản phảm bán chạy sau mùa dịch | BONUS STAGE
+                                    </p>
+                                    <p class="bell-time">23 phút trước</p>
+                                </div>
+                                <img src="images/misthy-1.jpg" alt="" class="bell-img-1">
+                                <i class='bell-icon__item bx bx-dots-vertical-rounded'></i>
+                            </li>
+                            <li class="bell-item-1">
+                                <img src="images/faptv.jpg" alt="" class="bell-img">
+                                <div class="bell-menu">
+                                    <p class="bell-content">FAPtv Vlog 04: Thách Thức Lồng Tiếng
+                                    </p>
+                                    <p class="bell-time">31 phút trước</p>
+                                </div>
+                                <img src="images/faptv-1.jpg" alt="" class="bell-img-1">
+                                <i class='bell-icon__item bx bx-dots-vertical-rounded'></i>
+                            </li>
+                            <li class="bell-item-1">
+                                <img src="images/thay3.jpg" alt="" class="bell-img">
+                                <div class="bell-menu">
+                                    <p class="bell-content">TRUNG ZED | TÀI NĂNG TRẺ XUẤT HIỆN TẠI RANK KIM CƯƠNG...BIỆT DANH ZED89
+                                    </p>
+                                    <p class="bell-time">48 phút trước</p>
+                                </div>
+                                <img src="images/thay3-1.jpg" alt="" class="bell-img-1">
+                                <i class='bell-icon__item bx bx-dots-vertical-rounded'></i>
+                            </li>
+                            <li class="bell-item-1">
+                                <img src="images/mixi.jpg" alt="" class="bell-img">
+                                <div class="bell-menu">
+                                    <p class="bell-content">MixiGaming đang phát trược tiếp:<br>
+                                        Restream hôm qua......
+                                    </p>
+                                    <p class="bell-time">56 phút trước</p>
+                                </div>
+                                <img src="images/mixi-1.jpg" alt="" class="bell-img-1">
+                                <i class='bell-icon__item bx bx-dots-vertical-rounded'></i>
+                            </li>
+                            <li class="bell-item-1">
+                                <img src="images/nhac.jpg" alt="" class="bell-img">
+                                <div class="bell-menu">
+                                    <p class="bell-content">dreamy boy with unrequited love - xeagle / Lofi Vietnam
+                                    </p>
+                                    <p class="bell-time">1 giờ trước</p>
+                                </div>
+                                <img src="images/nhac-1.jpg" alt="" class="bell-img-1">
+                                <i class='bell-icon__item bx bx-dots-vertical-rounded'></i>
+                            </li>
+                            <li class="bell-item-1">
+                                <img src="images/dtcl.jpg" alt="" class="bell-img">
+                                <div class="bell-menu">
+                                    <p class="bell-content">LIỆU ĐÂY CÓ PHẢI VỊ VUA CỦA NHỮNG VỊ TƯỚNG 5 VÀNG?
+                                    </p>
+                                    <p class="bell-time">2 giờ trước</p>
+                                </div>
+                                <img src="images/dtcl-1.jpg" alt="" class="bell-img-1">
+                                <i class='bell-icon__item bx bx-dots-vertical-rounded'></i>
+                            </li>
+                            <li class="bell-item-1">
+                                <img src="images/bichphuong.jpg" alt="" class="bell-img">
+                                <div class="bell-menu">
+                                    <p class="bell-content">BÍCH PHƯƠNG đã tải lên: Bích Phương chuyện trò liu riu | Tập 1
+                                    </p>
+                                    <p class="bell-time">3 giờ trước</p>
+                                </div>
+                                <img src="images/bichphuong-1.jpg" alt="" class="bell-img-1">
+                                <i class='bell-icon__item bx bx-dots-vertical-rounded'></i>
+                            </li>
+                            <li class="bell-item-1">
+                                <img src="images/pino.jpg" alt="" class="bell-img">
+                                <div class="bell-menu">
+                                    <p class="bell-content">( Đột Kích ) Ông Hoàng Sóc Lọ map Thị Trấn Bỏ Hoang =)))
+                                    </p>
+                                    <p class="bell-time">5 giờ trước</p>
+                                </div>
+                                <img src="images/pino-1.jpg" alt="" class="bell-img-1">
+                                <i class='bell-icon__item bx bx-dots-vertical-rounded'></i>
+                            </li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div id="add" class="me navbar-right__menu">
+                        <img src="images/me.jpg" alt="" class="me-img">
+                        <ul class="me-menu">
+                            <li class="me-item">
+                                <img src="images/me.jpg" alt="" class="me-item__img">
+                                <div class="me-item__content">
+                                    <h3 class="me-name">Phúc Đỗ</h3>
+                                    <a href="" class="me-manage">Quản lý tài khoản Google của ...</a>
+                                </div>
+                            </li>
+                            <li class="me-item-1">
+                                <a class="me-channel">
+                                    <i class='channel-icon bx bx-user-pin'></i>
+                                    <p class="channel-content">Kênh của bạn</p>
+                                </a>
+                                <a class="me-channel">
+                                    <i class='channel-icon bx bx-dollar-circle'></i>
+                                    <p class="channel-content">Giao dịch mua và gói thành viên</p>
+                                </a>
+                                <a class="me-channel">
+                                    <i class='channel-icon bx bx-cog'></i>
+                                    <p class="channel-content">Youtobe Studio</p>
+                                </a>
+                                <a class="me-channel">
+                                    <i class='channel-icon bx bxs-user-account'></i>
+                                    <p class="channel-content">Chuyển đổi tài khoản</p>
+                                    <i class='channel-icon bx bx-chevron-right'></i>
+                                </a>
+                                <a class="me-channel">
+                                    <i class='channel-icon bx bx-log-out'></i>
+                                    <p class="channel-content">Đăng xuất</p>
+                                </a>
+                            </li>
+                            <li class="me-item-1">
+                                <a class="me-channel">
+                                    <i class='channel-icon bx bx-moon'></i>
+                                    <p class="channel-content">Giao diện: Giao diện thiết bị</p>
+                                    <i class='channel-icon bx bx-chevron-right'></i>
+                                </a>
+                                <a class="me-channel">
+                                    <i class='channel-icon bx bx-recycle'></i>
+                                    <p class="channel-content">Ngôn ngữ: Tiếng Việt</p>
+                                    <i class='channel-icon bx bx-chevron-right'></i>
+                                </a>
+                                <a class="me-channel">
+                                    <i class='channel-icon bx bx-globe'></i>
+                                    <p class="channel-content">Địa điểm: Việt Nam</p>
+                                    <i class='channel-icon bx bx-chevron-right'></i>
+                                </a>
+                                <a class="me-channel">
+                                    <i class='channel-icon bx bx-cog'></i>
+                                    <p class="channel-content">Cài đặt</p>
+                                </a>
+                                <a class="me-channel">
+                                    <i class='channel-icon bx bxs-user-detail'></i>
+                                    <p class="channel-content">Dữ liệu của bạn trong Youtube</p>
+                                </a>
+                                <a class="me-channel">
+                                    <i class='channel-icon bx bx-help-circle'></i>
+                                    <p class="channel-content">Trợ giúp</p>
+                                </a>
+                                <a class="me-channel">
+                                    <i class='channel-icon bx bx-message-alt-error'></i>
+                                    <p class="channel-content">Gửi phản hồi</p>
+                                </a>
+                                <a class="me-channel">
+                                    <i class='channel-icon bx bxs-keyboard'></i>
+                                    <p class="channel-content">Phím tắt</p>
+                                </a>
+                            </li>
+                            <li class="me-item-1">
+                                <a class="me-channel">
+                                    <p class="channel-key channel-content">Chế độ hạn chế: Đã tắt</p>
+                                    <i class='channel-icon bx bx-chevron-right'></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="home">
+            <nav class="home-nav">
+                <div class="home-left">
+                    <div class="menu_home-1">
+                        <i class='menu-icon_6 bx bx-menu'></i>
+                    </div>
+                    <a href="#" class="logo">
+                        <img src="images/YouTube_Logo_2017.svg.png" alt="" class="home_logo-1">
+                    </a>
+                </div>
+                <ul class="sidebar">
+                    <li class="me-item-1">
+                                <a class="sidebar-home me-channel">
+                                    <i class='sidebar-icon bx bxs-home'></i>
+                                    <p class="channel-content">Trang chủ</p>
+                                </a>
+                                <a class="me-channel">
+                                    <i class='sidebar-icon bx bx-compass'></i>
+                                    <p class="channel-content">Khám phá</p>
+                                </a>
+                                <a class="me-channel">
+                                    <i class='sidebar-icon bx bx-movie-play'></i>
+                                    <p class="channel-content">Kênh đăng ký</p>
+                                </a>
+                    </li>
+                    <a class="me-channel sidebar-1">
+                        <i class='sidebar-icon bx bx-select-multiple'></i>
+                        <p class="channel-content">Thư viện</p>
+                    </a>
+                    <li class="me-item-1 sidebar-item">
+                                <a class="me-channel">
+                                    <i class='sidebar-icon bx bx-reset'></i>
+                                    <p class="channel-content">Video đã xem</p>
+                                </a>
+                                <a class="me-channel">
+                                    <i class='sidebar-icon bx bx-play-circle'></i>
+                                    <p class="channel-content">Video của bạn</p>
+                                </a>
+                                <a class="me-channel">
+                                    <i class='sidebar-icon bx bx-time-five'></i>
+                                    <p class="channel-content">Xem sau</p>
+                                </a>
+                                <a class="me-channel">
+                                    <i class='sidebar-icon bx bx-like'></i>
+                                    <p class="channel-content">Video đã thích</p>
+                                </a>
+                                <a class="me-channel">
+                                    <i class='sidebar-icon bx bx-broadcast'></i>
+                                    <p class="channel-content">Tổng hợp - VTV Ở N...</p>
+                                </a>
+                    </li>
+                    <li class="me-item-1 sidebar-item sidebar-sp">
+                        <div class="sp">
+                            <h2 class="sp-content">KÊNH ĐĂNG KÝ</h2>
+                        </div>
+                                <a class="me-channel">
+                                    <img src="images/mixi.jpg" alt="" class=" sidebar-icon me-channer__img">
+                                    <p class="channel-content">MixiGaming</p>
+                                    <i class='icon-live bx bx-broadcast'></i>
+                                </a>
+                                <a class="me-channel">
+                                    <img src="images/otm.jpg" alt="" class="me-channer__img sidebar-icon">
+                                    <p class="channel-content">Optimus</p>
+                                    <i class='icon-live bx bx-broadcast'></i>
+                                </a>
+                                <a class="me-channel">
+                                    <img src="images/levi.jpg" alt="" class="me-channer__img sidebar-icon">
+                                    <p class="channel-content">Levi</p>
+                                    <i class='icon-live bx bx-broadcast'></i>
+                                </a>
+                                <a class="me-channel">
+                                    <img src="images/nhím.jpg" alt="" class="me-channer__img sidebar-icon">
+                                    <p class="channel-content">Nhism</p>
+                                    <span class="me-cham"></span>
+                                </a>
+                                <a class="me-channel">
+                                    <img src="images/thuviengame.jpg" alt="" class="me-channer__img sidebar-icon">
+                                    <p class="channel-content">Thư Viện Game</p>
+                                    <span class="me-cham"></span>
+                                </a>
+                                <a class="me-channel">
+                                    <i class='sidebar-icon bx bx-chevron-down'></i>
+                                    <p class="channel-content">Hiên thị thêm 894 m...</p>
+                                </a>
+                                
+                    </li>
+                    <li class="me-item-1 sidebar-item sidebar-sp">
+                        <div class="sp">
+                            <h2 class="sp-content">DỊCH VỤ KHÁC CỦA<br>YOUTUBE</h2>
+                        </div>
+                                <a class="me-channel">
+                                    <i class='sidebar-icon bx bx-joystick-alt'></i>
+                                    <p class="channel-content">Trò chơi</p>
+                                </a>
+                                <a class="me-channel">
+                                    <i class='sidebar-icon bx bx-broadcast'></i>
+                                    <p class="channel-content">Sự kiện trước tiếp</p>
+                                </a>
+                                <a class="me-channel">
+                                    <i class='sidebar-icon bx bx-trophy'></i>
+                                    <p class="channel-content">Thể thao</p>
+                                </a>
+                    </li>
+                    <li class="me-item-1 sidebar-item sidebar-sp">
+                                <a class="me-channel">
+                                    <i class='sidebar-icon bx bx-cog'></i>
+                                    <p class="channel-content">Cài đặt</p>
+                                </a>
+                                <a class="me-channel">
+                                    <i class='sidebar-icon bx bx-flag'></i>
+                                    <p class="channel-content">Lịch sử báo cáo</p>
+                                </a>
+                                <a class="me-channel">
+                                    <i class='sidebar-icon bx bx-help-circle'></i>
+                                    <p class="channel-content">Trợ giúp</p>
+                                </a>
+                                <a class="me-channel">
+                                    <i class='sidebar-icon bx bx-message-alt-error'></i>
+                                    <p class="channel-content">Gửi phản hồi</p>
+                                </a>
+                    </li>
+                    <li class="me-item-1 sidebar-item sidebar-sp">
+                        <p class="sidebar-bottom">
+                            Giới thiệu Báo chí Bản quyền 
+                            <br>Liên hệ với chúng tôi Người sáng<br> tạo Quảng cáo Nhà phát triển
+                        </p>
+                        <p class="sidebar-bottom">
+                            Điều khoản Quyền riêng tư Chính sách và an toàn Cách YouTube hoạt động Thử các tính năng mới
+                        </p>
+                        <p class="cp-right">© 2021 Phúc Đỗ</p>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="extra">
+                <ul class="extra-home">
+                    <li class="extra-item">
+                        <a class="extra-item__1 extra-item__2">
+                            <i class='sidebar-icon extra-icon bx bxs-home'></i>
+                            <p class="extra-content">Trang chủ</p>
+                        </a>
+                    </li>
+                    <li class="extra-item">
+                        <a class="extra-item__1">
+                            <i class='sidebar-icon bx bx-compass'></i>
+                            <p class=" extra-content">Khám phá</p>
+                        </a>
+                    </li>
+                    <li class="extra-item">
+                        <a class="extra-item__1">
+                            <i class='sidebar-icon bx bx-movie-play'></i>
+                            <p class=" extra-content">Kênh đăng ký</p>
+                        </a>
+                    </li>
+                    <li class="extra-item">
+                        <a class="extra-item__1">
+                            <i class='sidebar-icon bx bx-select-multiple'></i>
+                            <p class=" extra-content">Thư viện</p>
+                        </a>
+                    </li>
+            </nav>
+            <div class="home-right">
+                <div class="home-cut">
+                    <ul class="cut__flex">
+                        <li class="cut-all__item">
+                            <a href="#" class="all__item-1">Tất cả</a>
+                        </li>
+                        <li class="cut-all__item">
+                            <a href="#" class="all__item-2">Phim hoạt hình</a>
+                        </li>
+                        <li class="cut-all__item">
+                            <a href="#" class="all__item-2">Toán học</a>
+                        </li>
+                        <li class="cut-all__item">
+                            <a href="#" class="all__item-2">Grand Theft Auto Online</a>
+                        </li>
+                        <li class="cut-all__item">
+                            <a href="#" class="all__item-2">Danh sách kết hợp</a>
+                        </li>
+                        <li class="cut-all__item">
+                            <a href="#" class="all__item-2">Chương trình nấu ăn</a>
+                        </li>
+                        <li class="cut-all__item">
+                            <a href="#" class="all__item-2">Âm nhạc</a>
+                        </li>
+                        <li class="cut-all__item">
+                            <a href="#" class="all__item-2">Trực tiếp</a>
+                        </li>
+                        <li class="cut-all__item">
+                            <a href="#" class="all__item-2">Bóng đá</a>
+                        </li>
+                        <li class="cut-all__item">
+                            <a href="#" class="all__item-2">Đọc rap</a>
+                        </li>
+                        <li class="cut-all__item">
+                            <a href="#" class="all__item-2">Bóng rổ</a>
+                        </li>
+                        <li class="cut-all__item">
+                            <a href="#" class="all__item-2">Trò chơi hành đọng phiêu lưu</a>
+                        </li>
+                        <li class="cut-all__right">
+                            <i class='all-icon-right bx bx-chevron-right'></i>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="home-section grid wide">
+                    <div class="section-menu row">
+                        <div class="section-menu__item l-3 m-6 c-12 col">
+                            <img src="images/muse1.jpg" alt="" class="section-img">
+                            <p class="time-ping">12:14</p>
+                            <div class="section__trong">
+                                <div class="trong__icon1">
+                                    <i class='icon__time-1 bx bx-time-five'></i>
+                                </div>
+                                <div class="trong__icon2">
+                                    <i class='icon__time-1 bx bxs-playlist' ></i>
+                                </div>
+                            </div>
+                            <div class="section-live">
+                                <img src="images/MUSE.jpg" alt="" class="section-live__logo">
+                                <div class="section-live__1">
+                                    <h3 class="section-title">Khúc hòa tấu nơi dị giới bắt đầu từ Death March - Tập 01 [Việt sub]</h3>
+                                    <p class="section-title-1">Muse Việt Nam</p>
+                                    <p class="section-title-2">463 N lượt xem <span>.</span>3 tuần trước</p>
+                                </div>
+                                <i class='section-title__icon bx bx-dots-vertical-rounded'></i>
+                            </div>
+                        </div>
+                        <div class="section-menu__item l-3 m-6 c-12 col">
+                            <img src="images/dev-1.jpg" alt="" class="section-img">
+                            <p class="time-ping">12:14</p>
+                            <div class="section__trong">
+                                <div class="trong__icon1">
+                                    <i class='icon__time-1 bx bx-time-five'></i>
+                                </div>
+                                <div class="trong__icon2">
+                                    <i class='icon__time-1 bx bxs-playlist' ></i>
+                                </div>
+                                
+                            </div>
+                            <div class="section-live">
+                                <img src="images/dev.jpg" alt="" class="section-live__logo">
+                                <div class="section-live__1">
+                                    <h3 class="section-title">(GTA V RP #45) THẦY BÓI QUAY TRỞ LẠI VÀ BỐC PHỐT DEV VOI LẦN THỨ 2</h3>
+                                    <p class="section-title-1">Dev Nguyen</p>
+                                    <p class="section-title-2">9N lượt xem <span>.</span>1 giờ trước</p>
+                                </div>
+                                <i class='section-title__icon bx bx-dots-vertical-rounded'></i>
+                            </div>
+                        </div>
+                        <div class="section-menu__item l-3 m-6 c-12 col">
+                            <img src="https://i.ytimg.com/vi/PKAPW9CaC18/maxresdefault.jpg" alt="" class="section-img">
+                            <p class="time-ping">5:27</p>
+                            <div class="section__trong">
+                                <div class="trong__icon1">
+                                    <i class='icon__time-1 bx bx-time-five'></i>
+                                </div>
+                                <div class="trong__icon2">
+                                    <i class='icon__time-1 bx bxs-playlist' ></i>
+                                </div>
+                                
+                            </div>
+                            <div class="section-live">
+                                <img src="images/vetv.jpg" alt="" class="section-live__logo">
+                                <div class="section-live__1">
+                                    <h3 class="section-title">100 vs T1 VÒNG BẢNG DAY 3 [CKTG 2021] [14.10.2021]</h3>
+                                    <p class="section-title-1">VETV7 ESPORTS</p>
+                                    <p class="section-title-2">195 N lượt xem<span>.</span>10 giờ trước </p>
+                                </div>
+                                <i class='section-title__icon bx bx-dots-vertical-rounded'></i>
+                            </div>
+                        </div>
+                        <div class="section-menu__item l-3 m-6 c-12 col">
+                            <img src="https://i.ytimg.com/vi/4Z4tRDM-KGg/maxresdefault.jpg" alt="" class="section-img">
+                            <p class="time-ping">34:48</p>
+                            <div class="section__trong">
+                                <div class="trong__icon1">
+                                    <i class='icon__time-1 bx bx-time-five'></i>
+                                </div>
+                                <div class="trong__icon2">
+                                    <i class='icon__time-1 bx bxs-playlist' ></i>
+                                </div>
+                                
+                            </div>
+                            <div class="section-live">
+                                <img src="images/mixi.jpg" alt="" class="section-live__logo">
+                                <div class="section-live__1">
+                                    <h3 class="section-title">(GTA V RP #45) THẦY BÓI QUAY TRỞ LẠI VÀ BỐC PHỐT DEV VOI LẦN THỨ 2</h3>
+                                    <p class="section-title-1">MixiGaming</p>
+                                    <p class="section-title-2">349N lượt xem <span>.</span>1 ngày trước</p>
+                                </div>
+                                <i class='section-title__icon bx bx-dots-vertical-rounded'></i>
+                            </div>
+                        </div>
+                        <div class="section-menu__item l-3 m-6 c-12 col">
+                            <img src="https://i.ytimg.com/vi/6bj4Tgrivwc/maxresdefault.jpg" alt="" class="section-img">
+                            <p class="time-ping">15:20</p>
+                            <div class="section__trong">
+                                <div class="trong__icon1">
+                                    <i class='icon__time-1 bx bx-time-five'></i>
+                                </div>
+                                <div class="trong__icon2">
+                                    <i class='icon__time-1 bx bxs-playlist' ></i>
+                                </div>
+                                
+                            </div>
+                            <div class="section-live">
+                                <img src="https://yt3.ggpht.com/ytc/AKedOLRdMeUndRVWyCq1zRfgKtJM9CfCwczo-rmxG20eRQ=s68-c-k-c0x00ffffff-no-rj" alt="" class="section-live__logo">
+                                <div class="section-live__1">
+                                    <h3 class="section-title">5 GIÂY HỒI GẦN 3000 MÁU!?HÀ TIỀU PHU TEST ĐỢT BUFF MỚI CỦA MUNDO VÀ LỜI NGUYỀN HÀ MIỆNG QUẠ TÁI XUẤT</h3>
+                                    <p class="section-title-1">Hà Tiều Phu</p>
+                                    <p class="section-title-2">125 N lượt xem <span>.</span>18 giờ trước</p>
+                                </div>
+                                <i class='section-title__icon bx bx-dots-vertical-rounded'></i>
+                            </div>
+                        </div>
+                        <div class="section-menu__item l-3 m-6 c-12 col">
+                            <img src="https://i.ytimg.com/vi/PV_-_NtYIV4/maxresdefault.jpg" alt="" class="section-img">
+                            <p class="time-ping">14:11</p>
+                            <div class="section__trong">
+                                <div class="trong__icon1">
+                                    <i class='icon__time-1 bx bx-time-five'></i>
+                                </div>
+                                <div class="trong__icon2">
+                                    <i class='icon__time-1 bx bxs-playlist' ></i>
+                                </div>
+                                
+                            </div>
+                            <div class="section-live">
+                                <img src="https://yt3.ggpht.com/ytc/AKedOLS8MIDKjIH-eA2RIOpANDmarpgJcF8D2nbWIClUWA=s68-c-k-c0x00ffffff-no-rj" alt="" class="section-live__logo">
+                                <div class="section-live__1">
+                                    <h3 class="section-title">Genshin Impact || Tiêu điểm Character ALOY - TRANG BỊ và ĐỘI HÌNH MẠNH NHẤT || Thư Viện Game</h3>
+                                    <p class="section-title-1">Thư Viện Game</p>
+                                    <p class="section-title-2">30 N lượt xem <span>.</span>18 giờ trước</p>
+                                </div>
+                                <i class='section-title__icon bx bx-dots-vertical-rounded'></i>
+                            </div>
+                        </div>
+                        <div class="section-menu__item l-3 m-6 c-12 col">
+                            <img src="https://i.ytimg.com/vi/5R44Riqz2To/maxresdefault.jpg" alt="" class="section-img">
+                            <p class="time-ping">24:18</p>
+                            <div class="section__trong">
+                                <div class="trong__icon1">
+                                    <i class='icon__time-1 bx bx-time-five'></i>
+                                </div>
+                                <div class="trong__icon2">
+                                    <i class='icon__time-1 bx bxs-playlist' ></i>
+                                </div>
+                                
+                            </div>
+                            <div class="section-live">
+                                <img src="https://yt3.ggpht.com/ytc/AKedOLSP9Ckp0rNRSrh1Ub8Kd-U6kK2kMCKwMCYapePm0A=s68-c-k-c0x00ffffff-no-rj" alt="" class="section-live__logo">
+                                <div class="section-live__1">
+                                    <h3 class="section-title">Giữa Đêm Khuya Sang Vlog Cầm Cây Chỉa Đi Vào Rừng Bắt Cá</h3>
+                                    <p class="section-title-1">Sang vlog</p>
+                                    <p class="section-title-2">685 N lượt xem <span>.</span>2 ngày trước</p>
+                                </div>
+                                <i class='section-title__icon bx bx-dots-vertical-rounded'></i>
+                            </div>
+                        </div>
+                        <div class="section-menu__item l-3 m-6 c-12 col">
+                            <img src="https://i.ytimg.com/vi/kxNQ_T6Qe_s/maxresdefault.jpg" alt="" class="section-img">
+                            <p class="time-ping">12:14</p>
+                            <div class="section__trong">
+                                <div class="trong__icon1">
+                                    <i class='icon__time-1 bx bx-time-five'></i>
+                                </div>
+                                <div class="trong__icon2">
+                                    <i class='icon__time-1 bx bxs-playlist' ></i>
+                                </div>
+                                
+                            </div>
+                            <div class="section-live">
+                                <img src="https://yt3.ggpht.com/ytc/AKedOLTvMRqK0whrVfsD2GkPgffe6BRjo6Xp6vh-qgxf=s68-c-k-c0x00ffffff-no-rj" alt="" class="section-live__logo">
+                                <div class="section-live__1">
+                                    <h3 class="section-title">bạch tuộc và mì cay SPICY OCTOPUS 🐙 BLACK BEAN NOODLE SEAFOOD FRIED DUMPLING EATING ASMR MUKBANG</h3>
+                                    <p class="section-title-1">Chihun ASMR 치훈</p>
+                                    <p class="section-title-2">240 N lượt xem <span>.</span>2 ngày trước</p>
+                                </div>
+                                <i class='section-title__icon bx bx-dots-vertical-rounded'></i>
+                            </div>
+                        </div>
+                        <div class="section-menu__item l-3 m-6 c-12 col">
+                            <img src="https://i.ytimg.com/vi/VCLciMI0eT8/maxresdefault.jpg" alt="" class="section-img">
+                            <p class="time-ping">12:14</p>
+                            <div class="section__trong">
+                                <div class="trong__icon1">
+                                    <i class='icon__time-1 bx bx-time-five'></i>
+                                </div>
+                                <div class="trong__icon2">
+                                    <i class='icon__time-1 bx bxs-playlist' ></i>
+                                </div>
+                                
+                            </div>
+                            <div class="section-live">
+                                <img src="https://yt3.ggpht.com/ytc/AKedOLRAH5Lm4-tUVimf4Tr-DczGJZ-ZBkUEugFBM7fH=s68-c-k-c0x00ffffff-no-rj" alt="" class="section-live__logo">
+                                <div class="section-live__1">
+                                    <h3 class="section-title">Nhân Viên BÁNH CANH SÒ Thuận Phúc Gọi Tên Võ Sư Lộc Nhận Hàng Tô Bánh Canh Thủy Tề Tại Vũng Tàu.</h3>
+                                    <p class="section-title-1">Funny Hùng</p>
+                                    <p class="section-title-2">192 N lượt xem <span>.</span>5 tháng trước</p>
+                                </div>
+                                <i class='section-title__icon bx bx-dots-vertical-rounded'></i>
+                            </div>
+                        </div>
+                        <div class="section-menu__item l-3 m-6 c-12 col">
+                            <img src="https://i.ytimg.com/vi/rLJtbv4BA_4/maxresdefault.jpg" alt="" class="section-img">
+                            <p class="time-ping">17:05</p>
+                            <div class="section__trong">
+                                <div class="trong__icon1">
+                                    <i class='icon__time-1 bx bx-time-five'></i>
+                                </div>
+                                <div class="trong__icon2">
+                                    <i class='icon__time-1 bx bxs-playlist' ></i>
+                                </div>
+                                
+                            </div>
+                            <div class="section-live">
+                                <img src="https://yt3.ggpht.com/ytc/AKedOLQuKGtmg9A2U7Lcko_YVZGU3Bd8VDf5YrNTg888=s68-c-k-c0x00ffffff-no-rj" alt="" class="section-live__logo">
+                                <div class="section-live__1">
+                                    <h3 class="section-title">tteonggae là bánh gạo kỳ lạ, hun khói qua samgyeop, bạn sẽ có xúc xích ngon</h3>
+                                    <p class="section-title-1">떵개떵</p>
+                                    <p class="section-title-2">1 Tr lượt xem <span>.</span>1 tháng trước</p>
+                                </div>
+                                <i class='section-title__icon bx bx-dots-vertical-rounded'></i>
+                            </div>
+                        </div>
+                        <div class="section-menu__item l-3 m-6 c-12 col">
+                            <img src="images/muse1.jpg" alt="" class="section-img">
+                            <p class="time-ping">12:14</p>
+                            <div class="section__trong">
+                                <div class="trong__icon1">
+                                    <i class='icon__time-1 bx bx-time-five'></i>
+                                </div>
+                                <div class="trong__icon2">
+                                    <i class='icon__time-1 bx bxs-playlist' ></i>
+                                </div>
+                            </div>
+                            <div class="section-live">
+                                <img src="images/MUSE.jpg" alt="" class="section-live__logo">
+                                <div class="section-live__1">
+                                    <h3 class="section-title">Khúc hòa tấu nơi dị giới bắt đầu từ Death March - Tập 01 [Việt sub]</h3>
+                                    <p class="section-title-1">Muse Việt Nam</p>
+                                    <p class="section-title-2">463 N lượt xem <span>.</span>3 tuần trước</p>
+                                </div>
+                                <i class='section-title__icon bx bx-dots-vertical-rounded'></i>
+                            </div>
+                        </div>
+                        <div class="section-menu__item l-3 m-6 c-12 col">
+                            <img src="images/dev-1.jpg" alt="" class="section-img">
+                            <p class="time-ping">12:14</p>
+                            <div class="section__trong">
+                                <div class="trong__icon1">
+                                    <i class='icon__time-1 bx bx-time-five'></i>
+                                </div>
+                                <div class="trong__icon2">
+                                    <i class='icon__time-1 bx bxs-playlist' ></i>
+                                </div>
+                                
+                            </div>
+                            <div class="section-live">
+                                <img src="images/dev.jpg" alt="" class="section-live__logo">
+                                <div class="section-live__1">
+                                    <h3 class="section-title">(GTA V RP #45) THẦY BÓI QUAY TRỞ LẠI VÀ BỐC PHỐT DEV VOI LẦN THỨ 2</h3>
+                                    <p class="section-title-1">Dev Nguyen</p>
+                                    <p class="section-title-2">9N lượt xem <span>.</span>1 giờ trước</p>
+                                </div>
+                                <i class='section-title__icon bx bx-dots-vertical-rounded'></i>
+                            </div>
+                        </div>
+                        <div class="section-menu__item l-3 m-6 c-12 col">
+                            <img src="https://i.ytimg.com/vi/PKAPW9CaC18/maxresdefault.jpg" alt="" class="section-img">
+                            <p class="time-ping">5:27</p>
+                            <div class="section__trong">
+                                <div class="trong__icon1">
+                                    <i class='icon__time-1 bx bx-time-five'></i>
+                                </div>
+                                <div class="trong__icon2">
+                                    <i class='icon__time-1 bx bxs-playlist' ></i>
+                                </div>
+                                
+                            </div>
+                            <div class="section-live">
+                                <img src="images/vetv.jpg" alt="" class="section-live__logo">
+                                <div class="section-live__1">
+                                    <h3 class="section-title">100 vs T1 VÒNG BẢNG DAY 3 [CKTG 2021] [14.10.2021]</h3>
+                                    <p class="section-title-1">VETV7 ESPORTS</p>
+                                    <p class="section-title-2">195 N lượt xem<span>.</span>10 giờ trước </p>
+                                </div>
+                                <i class='section-title__icon bx bx-dots-vertical-rounded'></i>
+                            </div>
+                        </div>
+                        <div class="section-menu__item l-3 m-6 c-12 col">
+                            <img src="https://i.ytimg.com/vi/4Z4tRDM-KGg/maxresdefault.jpg" alt="" class="section-img">
+                            <p class="time-ping">34:48</p>
+                            <div class="section__trong">
+                                <div class="trong__icon1">
+                                    <i class='icon__time-1 bx bx-time-five'></i>
+                                </div>
+                                <div class="trong__icon2">
+                                    <i class='icon__time-1 bx bxs-playlist' ></i>
+                                </div>
+                                
+                            </div>
+                            <div class="section-live">
+                                <img src="images/mixi.jpg" alt="" class="section-live__logo">
+                                <div class="section-live__1">
+                                    <h3 class="section-title">(GTA V RP #45) THẦY BÓI QUAY TRỞ LẠI VÀ BỐC PHỐT DEV VOI LẦN THỨ 2</h3>
+                                    <p class="section-title-1">MixiGaming</p>
+                                    <p class="section-title-2">349N lượt xem <span>.</span>1 ngày trước</p>
+                                </div>
+                                <i class='section-title__icon bx bx-dots-vertical-rounded'></i>
+                            </div>
+                        </div>
+                        <div class="section-menu__item l-3 m-6 c-12 col">
+                            <img src="https://i.ytimg.com/vi/6bj4Tgrivwc/maxresdefault.jpg" alt="" class="section-img">
+                            <p class="time-ping">15:20</p>
+                            <div class="section__trong">
+                                <div class="trong__icon1">
+                                    <i class='icon__time-1 bx bx-time-five'></i>
+                                </div>
+                                <div class="trong__icon2">
+                                    <i class='icon__time-1 bx bxs-playlist' ></i>
+                                </div>
+                                
+                            </div>
+                            <div class="section-live">
+                                <img src="https://yt3.ggpht.com/ytc/AKedOLRdMeUndRVWyCq1zRfgKtJM9CfCwczo-rmxG20eRQ=s68-c-k-c0x00ffffff-no-rj" alt="" class="section-live__logo">
+                                <div class="section-live__1">
+                                    <h3 class="section-title">5 GIÂY HỒI GẦN 3000 MÁU!?HÀ TIỀU PHU TEST ĐỢT BUFF MỚI CỦA MUNDO VÀ LỜI NGUYỀN HÀ MIỆNG QUẠ TÁI XUẤT</h3>
+                                    <p class="section-title-1">Hà Tiều Phu</p>
+                                    <p class="section-title-2">125 N lượt xem <span>.</span>18 giờ trước</p>
+                                </div>
+                                <i class='section-title__icon bx bx-dots-vertical-rounded'></i>
+                            </div>
+                        </div>
+                        <div class="section-menu__item l-3 m-6 c-12 col">
+                            <img src="https://i.ytimg.com/vi/PV_-_NtYIV4/maxresdefault.jpg" alt="" class="section-img">
+                            <p class="time-ping">14:11</p>
+                            <div class="section__trong">
+                                <div class="trong__icon1">
+                                    <i class='icon__time-1 bx bx-time-five'></i>
+                                </div>
+                                <div class="trong__icon2">
+                                    <i class='icon__time-1 bx bxs-playlist' ></i>
+                                </div>
+                                
+                            </div>
+                            <div class="section-live">
+                                <img src="https://yt3.ggpht.com/ytc/AKedOLS8MIDKjIH-eA2RIOpANDmarpgJcF8D2nbWIClUWA=s68-c-k-c0x00ffffff-no-rj" alt="" class="section-live__logo">
+                                <div class="section-live__1">
+                                    <h3 class="section-title">Genshin Impact || Tiêu điểm Character ALOY - TRANG BỊ và ĐỘI HÌNH MẠNH NHẤT || Thư Viện Game</h3>
+                                    <p class="section-title-1">Thư Viện Game</p>
+                                    <p class="section-title-2">30 N lượt xem <span>.</span>18 giờ trước</p>
+                                </div>
+                                <i class='section-title__icon bx bx-dots-vertical-rounded'></i>
+                            </div>
+                        </div>
+                        <div class="section-menu__item l-3 m-6 c-12 col">
+                            <img src="https://i.ytimg.com/vi/5R44Riqz2To/maxresdefault.jpg" alt="" class="section-img">
+                            <p class="time-ping">24:18</p>
+                            <div class="section__trong">
+                                <div class="trong__icon1">
+                                    <i class='icon__time-1 bx bx-time-five'></i>
+                                </div>
+                                <div class="trong__icon2">
+                                    <i class='icon__time-1 bx bxs-playlist' ></i>
+                                </div>
+                                
+                            </div>
+                            <div class="section-live">
+                                <img src="https://yt3.ggpht.com/ytc/AKedOLSP9Ckp0rNRSrh1Ub8Kd-U6kK2kMCKwMCYapePm0A=s68-c-k-c0x00ffffff-no-rj" alt="" class="section-live__logo">
+                                <div class="section-live__1">
+                                    <h3 class="section-title">Giữa Đêm Khuya Sang Vlog Cầm Cây Chỉa Đi Vào Rừng Bắt Cá</h3>
+                                    <p class="section-title-1">Sang vlog</p>
+                                    <p class="section-title-2">685 N lượt xem <span>.</span>2 ngày trước</p>
+                                </div>
+                                <i class='section-title__icon bx bx-dots-vertical-rounded'></i>
+                            </div>
+                        </div>
+                        <div class="section-menu__item l-3 m-6 c-12 col">
+                            <img src="https://i.ytimg.com/vi/kxNQ_T6Qe_s/maxresdefault.jpg" alt="" class="section-img">
+                            <p class="time-ping">12:14</p>
+                            <div class="section__trong">
+                                <div class="trong__icon1">
+                                    <i class='icon__time-1 bx bx-time-five'></i>
+                                </div>
+                                <div class="trong__icon2">
+                                    <i class='icon__time-1 bx bxs-playlist' ></i>
+                                </div>
+                                
+                            </div>
+                            <div class="section-live">
+                                <img src="https://yt3.ggpht.com/ytc/AKedOLTvMRqK0whrVfsD2GkPgffe6BRjo6Xp6vh-qgxf=s68-c-k-c0x00ffffff-no-rj" alt="" class="section-live__logo">
+                                <div class="section-live__1">
+                                    <h3 class="section-title">bạch tuộc và mì cay SPICY OCTOPUS 🐙 BLACK BEAN NOODLE SEAFOOD FRIED DUMPLING EATING ASMR MUKBANG</h3>
+                                    <p class="section-title-1">Chihun ASMR 치훈</p>
+                                    <p class="section-title-2">240 N lượt xem <span>.</span>2 ngày trước</p>
+                                </div>
+                                <i class='section-title__icon bx bx-dots-vertical-rounded'></i>
+                            </div>
+                        </div>
+                        <div class="section-menu__item l-3 m-6 c-12 col">
+                            <img src="https://i.ytimg.com/vi/VCLciMI0eT8/maxresdefault.jpg" alt="" class="section-img">
+                            <p class="time-ping">12:14</p>
+                            <div class="section__trong">
+                                <div class="trong__icon1">
+                                    <i class='icon__time-1 bx bx-time-five'></i>
+                                </div>
+                                <div class="trong__icon2">
+                                    <i class='icon__time-1 bx bxs-playlist' ></i>
+                                </div>
+                                
+                            </div>
+                            <div class="section-live">
+                                <img src="https://yt3.ggpht.com/ytc/AKedOLRAH5Lm4-tUVimf4Tr-DczGJZ-ZBkUEugFBM7fH=s68-c-k-c0x00ffffff-no-rj" alt="" class="section-live__logo">
+                                <div class="section-live__1">
+                                    <h3 class="section-title">Nhân Viên BÁNH CANH SÒ Thuận Phúc Gọi Tên Võ Sư Lộc Nhận Hàng Tô Bánh Canh Thủy Tề Tại Vũng Tàu.</h3>
+                                    <p class="section-title-1">Funny Hùng</p>
+                                    <p class="section-title-2">192 N lượt xem <span>.</span>5 tháng trước</p>
+                                </div>
+                                <i class='section-title__icon bx bx-dots-vertical-rounded'></i>
+                            </div>
+                        </div>
+                        <div class="section-menu__item l-3 m-6 c-12 col">
+                            <img src="https://i.ytimg.com/vi/rLJtbv4BA_4/maxresdefault.jpg" alt="" class="section-img">
+                            <p class="time-ping">17:05</p>
+                            <div class="section__trong">
+                                <div class="trong__icon1">
+                                    <i class='icon__time-1 bx bx-time-five'></i>
+                                </div>
+                                <div class="trong__icon2">
+                                    <i class='icon__time-1 bx bxs-playlist' ></i>
+                                </div>
+                                
+                            </div>
+                            <div class="section-live">
+                                <img src="https://yt3.ggpht.com/ytc/AKedOLQuKGtmg9A2U7Lcko_YVZGU3Bd8VDf5YrNTg888=s68-c-k-c0x00ffffff-no-rj" alt="" class="section-live__logo">
+                                <div class="section-live__1">
+                                    <h3 class="section-title">tteonggae là bánh gạo kỳ lạ, hun khói qua samgyeop, bạn sẽ có xúc xích ngon</h3>
+                                    <p class="section-title-1">떵개떵</p>
+                                    <p class="section-title-2">1 Tr lượt xem <span>.</span>1 tháng trước</p>
+                                </div>
+                                <i class='section-title__icon bx bx-dots-vertical-rounded'></i>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
